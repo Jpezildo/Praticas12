@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A-Note</title>
+        <link rel="stylesheet" href="style.css">
+        <a href="index.html">Início</a>
+        <a href="login.html">Login</a>
+        <a href="listagem.html">Notas</a>
+
+    </head>
+
+    <body>
+
+        <header>
+            <h1>A-Note</h1>
+        </header>
+
+        <main>
+
+            <section>
+                <h2>Pesquisar notas</h2>
+                <input type="search" id="search-input" placeholder="Pesquisar">
+            </section>
+
+            <section>
+                <h2>Criar nota</h2>
+                <button id="btn-expand-note">
+                    + Adicionar nota
+                </button>
+
+                <form id="note-form" hidden>
+                    <fieldset>
+                        <legend>Nova nota</legend>
+                        <label for="note-title">Título</label>
+                        <input type="text" id="note-title" name="title">
+                        <label for="note-text">Conteudo</label>
+                        <textarea id="note-text" name="content"></textarea>
+                    </fieldset>
+
+                    <footer>
+                        <button type="button" id="btn-close-note">Fechar</button>
+                        <button type="submit">Criar</button>
+                    </footer>
+                </form>
+                
+            </section>
+
+            <section id="notes-container">
+                <h2>Minhas notas</h2>
+
+                <!-- Modelo de nota -->
+                <!--
+                    <article>
+                    <h3>Título da nota</h3>
+                    <p>Conteúdo da nota</p>
+                </article>
+                -->
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2026 A-Note</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
