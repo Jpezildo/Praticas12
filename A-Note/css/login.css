@@ -1,0 +1,94 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+
+.card-login {
+    display: flex; 
+    flex-direction: column; 
+    width: 340px;
+    background-color: #e2dfd8; 
+    border: 2px solid #7a776c; 
+    border-radius: 16px; 
+    overflow: hidden; 
+}
+
+
+.cabecalho-login {
+    background-color: #a3a093; 
+    padding: 16px;
+    text-align: center;
+    border-bottom: 2px solid #7a776c; 
+}
+
+.cabecalho-login h1 {
+    color: white;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+
+.formulario-login {
+    display: flex;
+    flex-direction: column; 
+    padding: 30px 40px;
+    gap: 16px; 
+}
+
+
+.formulario-login input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #7a776c;
+    border-radius: 4px;
+    background-color: #fcfcfc;
+    text-align: center; 
+    font-size: 16px;
+    outline: none;
+}
+
+.formulario-login input:focus {
+    border-color: #4a4842; 
+}
+
+.rodape-login {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 12px; 
+    margin-top: 10px;
+}
+
+.rodape-login p {
+    font-size: 15px;
+    color: #111;
+}
+
+.rodape-login button {
+    padding: 8px 16px;
+    width: 140px;
+    border: 2px solid #7a776c;
+    border-radius: 4px;
+    background-color: #fcfcfc;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.rodape-login button:hover {
+    background-color: #e2dfd8; /* Efeito hover para feedback visual */
+}
